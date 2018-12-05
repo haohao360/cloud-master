@@ -57,13 +57,20 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-      <dependency>
+      <!-- <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dependencies</artifactId>
         <version>Edgware.SR3</version> 
         <type>pom</type>
         <scope>import</scope>
-      </dependency>
+      </dependency> -->
+      <dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-parent</artifactId>
+				<version>Edgware.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+</dependency>
       <!-- google java lib -->
       <dependency>
         <groupId>com.google.guava</groupId>
@@ -76,26 +83,7 @@
         <artifactId>paascloud-common-base</artifactId>
         <version>${paascloud.version}</version>
       </dependency>
-      <dependency>
-        <groupId>com.liuzm.paascloud.common</groupId>
-        <artifactId>paascloud-common-core</artifactId>
-        <version>${paascloud.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.liuzm.paascloud.common</groupId>
-        <artifactId>paascloud-common-util</artifactId>
-        <version>${paascloud.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.liuzm.paascloud.common</groupId>
-        <artifactId>paascloud-common-zk</artifactId>
-        <version>${paascloud.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.liuzm.paascloud.common</groupId>
-        <artifactId>paascloud-security-app</artifactId>
-        <version>${paascloud.version}</version> 
-      </dependency> -->
+       -->
       <!-- paas cloud end -->
       <!-- swagger cloud start -->
       <dependency>
@@ -416,12 +404,11 @@
     </dependencies>
   </dependencyManagement>
 
-  <build>
+  <!-- <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>2.3.2</version>
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
@@ -429,7 +416,7 @@
         </configuration>
       </plugin>
     </plugins>
-  </build>
+  </build> -->
 
   <profiles>
     <profile>
