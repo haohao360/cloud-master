@@ -9,7 +9,7 @@ spring:
     config:
       server:
         native:
-          search-locations: classpath:/properties/
+          searchLocations: D:/GitHub/config-repo
 eureka:
   instance:
     prefer-ip-address: true
